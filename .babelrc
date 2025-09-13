@@ -1,0 +1,20 @@
+﻿{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-typescript",
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }]
+  ],
+  "plugins": [
+    "react-native-web",
+    ["module-resolver", {
+      "alias": {
+        "^react-native$": "react-native-web",
+        "^react-native-linear-gradient$": "react-native-web-linear-gradient"
+      }
+    }]
+  ]
+}
